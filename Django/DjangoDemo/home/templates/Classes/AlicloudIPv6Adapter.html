@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>AlicloudIPv6Adapter Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">qudianDoc </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">qudian</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/handleIpv4Address:">- handleIpv4Address:</option>
+		
+		<option value="//api/name/isIPv4Address:">- isIPv4Address:</option>
+		
+		<option value="//api/name/isIPv6Address:">- isIPv6Address:</option>
+		
+		<option value="//api/name/isIPv6OnlyNetwork">- isIPv6OnlyNetwork</option>
+		
+		<option value="//api/name/reResolveIPv6OnlyStatus">- reResolveIPv6OnlyStatus</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">AlicloudIPv6Adapter Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>AlicloudIPv6Adapter.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/isIPv6OnlyNetwork" title="isIPv6OnlyNetwork"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isIPv6OnlyNetwork">&ndash;&nbsp;isIPv6OnlyNetwork</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>判断当前是否为IPv6-Only网络</p>
+
+<pre><code>@return
+</code></pre>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isIPv6OnlyNetwork</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AlicloudIPv6Adapter.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/reResolveIPv6OnlyStatus" title="reResolveIPv6OnlyStatus"></a>
+	<h3 class="method-title"><code><a href="#//api/name/reResolveIPv6OnlyStatus">&ndash;&nbsp;reResolveIPv6OnlyStatus</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>手动刷新IPv6-Only网络的判定</p>
+
+<pre><code>@return
+</code></pre>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)reResolveIPv6OnlyStatus</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AlicloudIPv6Adapter.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/handleIpv4Address:" title="handleIpv4Address:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/handleIpv4Address:">&ndash;&nbsp;handleIpv4Address:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>@brief  自动完成对IPv4地址的适配</li>
+<li><pre><code>   IPv6-Only网络环境：IPv4 address -&gt; IPv4 Embedded IPv6 address
+    例：42.156.220.114 -&gt; 64:ff9b::2a9c:dc72
+</code></pre></li>
+<li>@param  addr
+*</li>
+<li>@return</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)handleIpv4Address:(NSString *)<em>addr</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<ul>
+<li>@brief  自动完成对IPv4地址的适配</li>
+<li><pre><code>   IPv6-Only网络环境：IPv4 address -&gt; IPv4 Embedded IPv6 address
+    例：42.156.220.114 -&gt; 64:ff9b::2a9c:dc72
+</code></pre></li>
+<li>@param  addr
+*</li>
+<li>@return</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AlicloudIPv6Adapter.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isIPv4Address:" title="isIPv4Address:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isIPv4Address:">&ndash;&nbsp;isIPv4Address:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>判断是否为IPv4地址</p>
+
+<pre><code>@return
+</code></pre>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isIPv4Address:(NSString *)<em>addr</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AlicloudIPv6Adapter.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isIPv6Address:" title="isIPv6Address:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isIPv6Address:">&ndash;&nbsp;isIPv6Address:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>判断是否为IPv6地址</p>
+
+<pre><code>@return
+</code></pre>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isIPv6Address:(NSString *)<em>addr</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AlicloudIPv6Adapter.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 qudian. All rights reserved. Updated: 2016-11-29</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

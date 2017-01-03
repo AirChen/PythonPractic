@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>SDWebImageDownloaderOptions Constants Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">qudianDoc </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">qudian</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">SDWebImageDownloaderOptions Constants Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Declared in</th>
+	<td>SDWebImageDownloader.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+
+                    
+                    <h3 class="subsubtitle method-title">SDWebImageDownloaderOptions</h3>
+                    
+                    <div class="section">
+                        <!-- display enum values -->
+                        
+                        <h4 class="method-subtitle">Definition</h4>
+                        <code>typedef NS_OPTIONS(NSUInteger, SDWebImageDownloaderOptions ) {<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDWebImageDownloaderLowPriority</a> = 1 &lt; &lt; 0,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDWebImageDownloaderProgressiveDownload</a> = 1 &lt; &lt; 1,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDWebImageDownloaderUseNSURLCache</a> = 1 &lt; &lt; 2,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDWebImageDownloaderIgnoreCachedResponse</a> = 1 &lt; &lt; 3,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDWebImageDownloaderContinueInBackground</a> = 1 &lt; &lt; 4,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDWebImageDownloaderHandleCookies</a> = 1 &lt; &lt; 5,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDWebImageDownloaderAllowInvalidSSLCertificates</a> = 1 &lt; &lt; 6,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDWebImageDownloaderHighPriority</a> = 1 &lt; &lt; 7,<br>
+                            
+                            };</code>
+                    
+                    </div>
+                    
+                    <div class="section section-methods">
+                        <h4 class="method-subtitle">Constants</h4>
+                        <dl class="termdef">
+                            
+                            <dt><a name="" title="SDWebImageDownloaderLowPriority"></a><code>SDWebImageDownloaderLowPriority</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">SDWebImageDownloader.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDWebImageDownloaderProgressiveDownload"></a><code>SDWebImageDownloaderProgressiveDownload</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">SDWebImageDownloader.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDWebImageDownloaderUseNSURLCache"></a><code>SDWebImageDownloaderUseNSURLCache</code></dt>
+<dd>
+
+
+<p>By default, request prevent the use of NSURLCache. With this flag, NSURLCache
+is used with default policies.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">SDWebImageDownloader.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDWebImageDownloaderIgnoreCachedResponse"></a><code>SDWebImageDownloaderIgnoreCachedResponse</code></dt>
+<dd>
+
+
+<p>Call completion block with nil image/imageData if the image was read from NSURLCache
+(to be combined with <code>SDWebImageDownloaderUseNSURLCache</code>).</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">SDWebImageDownloader.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDWebImageDownloaderContinueInBackground"></a><code>SDWebImageDownloaderContinueInBackground</code></dt>
+<dd>
+
+
+<p>In iOS 4+, continue the download of the image if the app goes to background. This is achieved by asking the system for
+extra time in background to let the request finish. If the background task expires the operation will be cancelled.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">SDWebImageDownloader.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDWebImageDownloaderHandleCookies"></a><code>SDWebImageDownloaderHandleCookies</code></dt>
+<dd>
+
+
+<p>Handles cookies stored in NSHTTPCookieStore by setting
+NSMutableURLRequest.HTTPShouldHandleCookies = YES;</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">SDWebImageDownloader.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDWebImageDownloaderAllowInvalidSSLCertificates"></a><code>SDWebImageDownloaderAllowInvalidSSLCertificates</code></dt>
+<dd>
+
+
+<p>Enable to allow untrusted SSL certificates.
+Useful for testing purposes. Use with caution in production.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">SDWebImageDownloader.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDWebImageDownloaderHighPriority"></a><code>SDWebImageDownloaderHighPriority</code></dt>
+<dd>
+
+
+<p>Put the image in the high priority queue.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">SDWebImageDownloader.h</code>.
+	</p>
+	
+</dd>
+                            
+                        </dl>
+                    </div>
+                    
+
+                    
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 qudian. All rights reserved. Updated: 2016-11-29</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

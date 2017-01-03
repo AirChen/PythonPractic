@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>SDWebImageDownloaderOperation Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">qudianDoc </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">qudian</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/)">)</option>
+		
+		<option value="//api/name/credential">credential</option>
+		
+		<option value="//api/name/dataTask">dataTask</option>
+		
+		<option value="//api/name/expectedSize">expectedSize</option>
+		
+		<option value="//api/name/options">options</option>
+		
+		<option value="//api/name/request">request</option>
+		
+		<option value="//api/name/response">response</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/URLSession:task:didReceiveChallenge:completionHandler:">- URLSession:task:didReceiveChallenge:completionHandler:</option>
+		
+		<option value="//api/name/cancel">- cancel</option>
+		
+		<option value="//api/name/initWithRequest:inSession:options:progress:completed:cancelled:">- initWithRequest:inSession:options:progress:completed:cancelled:</option>
+		
+		<option value="//api/name/initWithRequest:options:progress:completed:cancelled:">- initWithRequest:options:progress:completed:cancelled:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">SDWebImageDownloaderOperation Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSOperation</td>
+</tr><tr>
+	<th>Conforms to</th>
+	<td>NSURLSessionDataDelegate<br />NSURLSessionTaskDelegate<br />SDWebImageOperation</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>SDWebImageDownloaderOperation.h<br />SDWebImageDownloaderOperation.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/request" title="request"></a>
+	<h3 class="method-title"><code><a href="#//api/name/request">&nbsp;&nbsp;request</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The request used by the operation&rsquo;s task.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic, readonly) NSURLRequest *request</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The request used by the operation&rsquo;s task.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SDWebImageDownloaderOperation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/dataTask" title="dataTask"></a>
+	<h3 class="method-title"><code><a href="#//api/name/dataTask">&nbsp;&nbsp;dataTask</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The operation&rsquo;s task</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic, readonly) NSURLSessionTask *dataTask</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The operation&rsquo;s task</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SDWebImageDownloaderOperation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/)" title=")"></a>
+	<h3 class="method-title"><code><a href="#//api/name/)">&nbsp;&nbsp;)</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Was used to determine whether the URL connection should consult the <a href="#//api/name/credential">credential</a> storage for authenticating the connection. (<b class="deprecated">Deprecated:</b><span class="deprecated"> Not used for a couple of versions</span>)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL shouldUseCredentialStorage __deprecated_msg ( &quot;Property deprecated. Does nothing. Kept only for backwards compatibility&quot; )</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Was used to determine whether the URL connection should consult the <a href="#//api/name/credential">credential</a> storage for authenticating the connection.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SDWebImageDownloaderOperation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/credential" title="credential"></a>
+	<h3 class="method-title"><code><a href="#//api/name/credential">&nbsp;&nbsp;credential</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The credential used for authentication challenges in <code>-connection:didReceiveAuthenticationChallenge:</code>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSURLCredential *credential</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The credential used for authentication challenges in <code>-connection:didReceiveAuthenticationChallenge:</code>.</p>
+
+<p>This will be overridden by any shared credentials that exist for the username or password of the <a href="#//api/name/request">request</a> URL, if present.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SDWebImageDownloaderOperation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/options" title="options"></a>
+	<h3 class="method-title"><code><a href="#//api/name/options">&nbsp;&nbsp;options</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The <a href="../Constants/SDWebImageDownloaderOptions.html">SDWebImageDownloaderOptions</a> for the receiver.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, nonatomic, readonly) SDWebImageDownloaderOptions options</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The <a href="../Constants/SDWebImageDownloaderOptions.html">SDWebImageDownloaderOptions</a> for the receiver.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SDWebImageDownloaderOperation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/expectedSize" title="expectedSize"></a>
+	<h3 class="method-title"><code><a href="#//api/name/expectedSize">&nbsp;&nbsp;expectedSize</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The expected size of data.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) NSInteger expectedSize</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The expected size of data.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SDWebImageDownloaderOperation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/response" title="response"></a>
+	<h3 class="method-title"><code><a href="#//api/name/response">&nbsp;&nbsp;response</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The response returned by the operation&rsquo;s connection.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) NSURLResponse *response</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The response returned by the operation&rsquo;s connection.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SDWebImageDownloaderOperation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithRequest:inSession:options:progress:completed:cancelled:" title="initWithRequest:inSession:options:progress:completed:cancelled:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithRequest:inSession:options:progress:completed:cancelled:">&ndash;&nbsp;initWithRequest:inSession:options:progress:completed:cancelled:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initializes a <code>SDWebImageDownloaderOperation</code> object</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id)initWithRequest:(NSURLRequest *)<em>request</em> inSession:(NSURLSession *)<em>session</em> options:(SDWebImageDownloaderOptions)<em>options</em> progress:(SDWebImageDownloaderProgressBlock)<em>progressBlock</em> completed:(SDWebImageDownloaderCompletedBlock)<em>completedBlock</em> cancelled:(SDWebImageNoParamsBlock)<em>cancelBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>request</code></th>
+						<td><p>the URL <a href="#//api/name/request">request</a></p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>session</code></th>
+						<td><p>the URL session in which this operation will run</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>options</code></th>
+						<td><p>downloader <a href="#//api/name/options">options</a></p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>progressBlock</code></th>
+						<td><p>the block executed when a new chunk of data arrives.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completedBlock</code></th>
+						<td><p>the block executed when the download is <a href="#//api/name/done">done</a>.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>cancelBlock</code></th>
+						<td><p>the block executed if the download (operation) is cancelled</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the initialized instance</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Initializes a <code>SDWebImageDownloaderOperation</code> object</p><div class="note"><p><strong>Note:</strong> the progress block is executed on a background queue</p></div><div class="note"><p><strong>Note:</strong> the completed block is executed on the main queue for success. If errors are found, there is a chance the block will be executed on a background queue</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SDWebImageDownloaderOperation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithRequest:options:progress:completed:cancelled:" title="initWithRequest:options:progress:completed:cancelled:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithRequest:options:progress:completed:cancelled:">&ndash;&nbsp;initWithRequest:options:progress:completed:cancelled:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initializes a <code>SDWebImageDownloaderOperation</code> object</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id)initWithRequest:(NSURLRequest *)<em>request</em> options:(SDWebImageDownloaderOptions)<em>options</em> progress:(SDWebImageDownloaderProgressBlock)<em>progressBlock</em> completed:(SDWebImageDownloaderCompletedBlock)<em>completedBlock</em> cancelled:(SDWebImageNoParamsBlock)<em>cancelBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>request</code></th>
+						<td><p>the URL <a href="#//api/name/request">request</a></p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>options</code></th>
+						<td><p>downloader <a href="#//api/name/options">options</a></p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>progressBlock</code></th>
+						<td><p>the block executed when a new chunk of data arrives.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completedBlock</code></th>
+						<td><p>the block executed when the download is <a href="#//api/name/done">done</a>.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>cancelBlock</code></th>
+						<td><p>the block executed if the download (operation) is cancelled</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the initialized instance. The operation will run in a separate session created for this operation</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Initializes a <code>SDWebImageDownloaderOperation</code> object</p><div class="note"><p><strong>Note:</strong> the progress block is executed on a background queue</p></div><div class="note"><p><strong>Note:</strong> the completed block is executed on the main queue for success. If errors are found, there is a chance the block will be executed on a background queue</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SDWebImageDownloaderOperation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/cancel" title="cancel"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cancel">&ndash;&nbsp;cancel</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Create the session for this task
+We send nil as delegate queue so that the session creates a serial operation queue for performing all delegate
+method calls and completion handler calls.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cancel</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Create the session for this task
+We send nil as delegate queue so that the session creates a serial operation queue for performing all delegate
+method calls and completion handler calls.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SDWebImageDownloaderOperation.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/URLSession:task:didReceiveChallenge:completionHandler:" title="URLSession:task:didReceiveChallenge:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/URLSession:task:didReceiveChallenge:completionHandler:">&ndash;&nbsp;URLSession:task:didReceiveChallenge:completionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>See #1608 and #1623 - apparently, there is a race condition on <code>NSURLCache</code> that causes a crash
+Limited the calls to <code>cachedResponseForRequest:</code> only for cases where we should ignore the cached <a href="#//api/name/response">response</a>
+and images for which responseFromCached is YES (only the ones that cannot be cached).
+Note: responseFromCached is set to NO inside <code>willCacheResponse:</code>. This method doesn&rsquo;t get called for large images or images behind authentication</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)URLSession:(NSURLSession *)<em>session</em> task:(NSURLSessionTask *)<em>task</em> didReceiveChallenge:(NSURLAuthenticationChallenge *)<em>challenge</em> completionHandler:(void ( ^ ) ( NSURLSessionAuthChallengeDisposition disposition , NSURLCredential *credential ))<em>completionHandler</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>See #1608 and #1623 - apparently, there is a race condition on <code>NSURLCache</code> that causes a crash
+Limited the calls to <code>cachedResponseForRequest:</code> only for cases where we should ignore the cached <a href="#//api/name/response">response</a>
+and images for which responseFromCached is YES (only the ones that cannot be cached).
+Note: responseFromCached is set to NO inside <code>willCacheResponse:</code>. This method doesn&rsquo;t get called for large images or images behind authentication</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SDWebImageDownloaderOperation.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 qudian. All rights reserved. Updated: 2016-11-29</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

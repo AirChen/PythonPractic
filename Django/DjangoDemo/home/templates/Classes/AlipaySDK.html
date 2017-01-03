@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>AlipaySDK Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">qudianDoc </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">qudian</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/targetWindow">targetWindow</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/defaultService">+ defaultService</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/authWithInfo:callback:">- authWithInfo:callback:</option>
+		
+		<option value="//api/name/auth_V2WithInfo:fromScheme:callback:">- auth_V2WithInfo:fromScheme:callback:</option>
+		
+		<option value="//api/name/currentVersion">- currentVersion</option>
+		
+		<option value="//api/name/fetchOrderInfoFromH5PayUrl:">- fetchOrderInfoFromH5PayUrl:</option>
+		
+		<option value="//api/name/fetchTradeToken">- fetchTradeToken</option>
+		
+		<option value="//api/name/isLogined">- isLogined</option>
+		
+		<option value="//api/name/payOrder:fromScheme:callback:">- payOrder:fromScheme:callback:</option>
+		
+		<option value="//api/name/payUrlOrder:fromScheme:callback:">- payUrlOrder:fromScheme:callback:</option>
+		
+		<option value="//api/name/processAuthResult:standbyCallback:">- processAuthResult:standbyCallback:</option>
+		
+		<option value="//api/name/processAuth_V2Result:standbyCallback:">- processAuth_V2Result:standbyCallback:</option>
+		
+		<option value="//api/name/processOrderWithPaymentResult:standbyCallback:">- processOrderWithPaymentResult:standbyCallback:</option>
+		
+		<option value="//api/name/queryTidFactor:">- queryTidFactor:</option>
+		
+		<option value="//api/name/setUrl:">- setUrl:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">AlipaySDK Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>AlipaySDK.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/defaultService" title="defaultService"></a>
+	<h3 class="method-title"><code><a href="#//api/name/defaultService">+&nbsp;defaultService</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>创建支付单例服务</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (AlipaySDK *)defaultService</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>返回单例对象</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>创建支付单例服务</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AlipaySDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/targetWindow" title="targetWindow"></a>
+	<h3 class="method-title"><code><a href="#//api/name/targetWindow">&nbsp;&nbsp;targetWindow</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>用于设置SDK使用的window，如果没有自行创建window无需设置此接口</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) UIWindow *targetWindow</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>用于设置SDK使用的window，如果没有自行创建window无需设置此接口</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AlipaySDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/payOrder:fromScheme:callback:" title="payOrder:fromScheme:callback:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/payOrder:fromScheme:callback:">&ndash;&nbsp;payOrder:fromScheme:callback:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>支付接口</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)payOrder:(NSString *)<em>orderStr</em> fromScheme:(NSString *)<em>schemeStr</em> callback:(CompletionBlock)<em>completionBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>orderStr</code></th>
+						<td><p>订单信息</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>schemeStr</code></th>
+						<td><p>调用支付的app注册在info.plist中的scheme</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>compltionBlock</code></th>
+						<td><p>支付结果回调Block，用于wap支付结果回调（非跳转钱包支付）</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>支付接口</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AlipaySDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/processOrderWithPaymentResult:standbyCallback:" title="processOrderWithPaymentResult:standbyCallback:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/processOrderWithPaymentResult:standbyCallback:">&ndash;&nbsp;processOrderWithPaymentResult:standbyCallback:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>处理钱包或者独立快捷app支付跳回商户app携带的支付结果Url</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)processOrderWithPaymentResult:(NSURL *)<em>resultUrl</em> standbyCallback:(CompletionBlock)<em>completionBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>resultUrl</code></th>
+						<td><p>支付结果url</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionBlock</code></th>
+						<td><p>支付结果回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>处理钱包或者独立快捷app支付跳回商户app携带的支付结果Url</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AlipaySDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fetchTradeToken" title="fetchTradeToken"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fetchTradeToken">&ndash;&nbsp;fetchTradeToken</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取交易token。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)fetchTradeToken</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>交易token，若无则为空。</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取交易token。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AlipaySDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isLogined" title="isLogined"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isLogined">&ndash;&nbsp;isLogined</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>是否已经使用过</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isLogined</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>YES为已经使用过，NO反之</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>是否已经使用过</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AlipaySDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/currentVersion" title="currentVersion"></a>
+	<h3 class="method-title"><code><a href="#//api/name/currentVersion">&ndash;&nbsp;currentVersion</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>当前版本号</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)currentVersion</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>当前版本字符串</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>当前版本号</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AlipaySDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/queryTidFactor:" title="queryTidFactor:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/queryTidFactor:">&ndash;&nbsp;queryTidFactor:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>当前版本号</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)queryTidFactor:(AlipayTidFactor)<em>factor</em></code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>tid相关信息</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>当前版本号</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AlipaySDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setUrl:" title="setUrl:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setUrl:">&ndash;&nbsp;setUrl:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>測試所用，realse包无效</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setUrl:(NSString *)<em>url</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>url</code></th>
+						<td><p>测试环境</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>測試所用，realse包无效</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AlipaySDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fetchOrderInfoFromH5PayUrl:" title="fetchOrderInfoFromH5PayUrl:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fetchOrderInfoFromH5PayUrl:">&ndash;&nbsp;fetchOrderInfoFromH5PayUrl:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>url order 获取接口</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)fetchOrderInfoFromH5PayUrl:(NSString *)<em>urlStr</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>urlStr</code></th>
+						<td><p>拦截的 url string</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>获取到的url order info</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>url order 获取接口</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AlipaySDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/payUrlOrder:fromScheme:callback:" title="payUrlOrder:fromScheme:callback:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/payUrlOrder:fromScheme:callback:">&ndash;&nbsp;payUrlOrder:fromScheme:callback:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>url支付接口</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)payUrlOrder:(NSString *)<em>orderStr</em> fromScheme:(NSString *)<em>schemeStr</em> callback:(CompletionBlock)<em>completionBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>orderStr</code></th>
+						<td><p>订单信息</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>schemeStr</code></th>
+						<td><p>调用支付的app注册在info.plist中的scheme</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>compltionBlock</code></th>
+						<td><p>支付结果回调Block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>url支付接口</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AlipaySDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/authWithInfo:callback:" title="authWithInfo:callback:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/authWithInfo:callback:">&ndash;&nbsp;authWithInfo:callback:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>快登授权</li>
+<li>@param authInfo         需授权信息</li>
+<li>@param completionBlock  授权结果回调，若在授权过程中，调用方应用被系统终止，则此block无效，
+                         需要调用方在appDelegate中调用processAuthResult:standbyCallback:方法获取授权结果</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)authWithInfo:(APayAuthInfo *)<em>authInfo</em> callback:(CompletionBlock)<em>completionBlock</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<ul>
+<li>快登授权</li>
+<li>@param authInfo         需授权信息</li>
+<li>@param completionBlock  授权结果回调，若在授权过程中，调用方应用被系统终止，则此block无效，
+                         需要调用方在appDelegate中调用processAuthResult:standbyCallback:方法获取授权结果</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AlipaySDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/processAuthResult:standbyCallback:" title="processAuthResult:standbyCallback:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/processAuthResult:standbyCallback:">&ndash;&nbsp;processAuthResult:standbyCallback:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>处理授权信息Url</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)processAuthResult:(NSURL *)<em>resultUrl</em> standbyCallback:(CompletionBlock)<em>completionBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>resultUrl</code></th>
+						<td><p>钱包返回的授权结果url</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionBlock</code></th>
+						<td><p>授权结果回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>处理授权信息Url</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AlipaySDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/auth_V2WithInfo:fromScheme:callback:" title="auth_V2WithInfo:fromScheme:callback:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/auth_V2WithInfo:fromScheme:callback:">&ndash;&nbsp;auth_V2WithInfo:fromScheme:callback:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>快登授权2.0
+*</li>
+<li>@param infoStr          授权请求信息字符串</li>
+<li>@param schemeStr        调用授权的app注册在info.plist中的scheme</li>
+<li>@param completionBlock  授权结果回调，若在授权过程中，调用方应用被系统终止，则此block无效，
+                         需要调用方在appDelegate中调用processAuth_V2Result:standbyCallback:方法获取授权结果</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)auth_V2WithInfo:(NSString *)<em>infoStr</em> fromScheme:(NSString *)<em>schemeStr</em> callback:(CompletionBlock)<em>completionBlock</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<ul>
+<li>快登授权2.0
+*</li>
+<li>@param infoStr          授权请求信息字符串</li>
+<li>@param schemeStr        调用授权的app注册在info.plist中的scheme</li>
+<li>@param completionBlock  授权结果回调，若在授权过程中，调用方应用被系统终止，则此block无效，
+                         需要调用方在appDelegate中调用processAuth_V2Result:standbyCallback:方法获取授权结果</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AlipaySDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/processAuth_V2Result:standbyCallback:" title="processAuth_V2Result:standbyCallback:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/processAuth_V2Result:standbyCallback:">&ndash;&nbsp;processAuth_V2Result:standbyCallback:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>处理授权信息Url</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)processAuth_V2Result:(NSURL *)<em>resultUrl</em> standbyCallback:(CompletionBlock)<em>completionBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>resultUrl</code></th>
+						<td><p>钱包返回的授权结果url</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionBlock</code></th>
+						<td><p>授权结果回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>处理授权信息Url</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AlipaySDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 qudian. All rights reserved. Updated: 2016-11-29</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

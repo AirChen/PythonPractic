@@ -1,0 +1,3525 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>IQKeyboardManager Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">qudianDoc </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">qudian</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/animationCurve">animationCurve</option>
+		
+		<option value="//api/name/animationDuration">animationDuration</option>
+		
+		<option value="//api/name/canGoNext">canGoNext</option>
+		
+		<option value="//api/name/canGoPrevious">canGoPrevious</option>
+		
+		<option value="//api/name/disabledDistanceHandlingClasses">disabledDistanceHandlingClasses</option>
+		
+		<option value="//api/name/disabledToolbarClasses">disabledToolbarClasses</option>
+		
+		<option value="//api/name/disabledTouchResignedClasses">disabledTouchResignedClasses</option>
+		
+		<option value="//api/name/enable">enable</option>
+		
+		<option value="//api/name/enableAutoToolbar">enableAutoToolbar</option>
+		
+		<option value="//api/name/enabledDistanceHandlingClasses">enabledDistanceHandlingClasses</option>
+		
+		<option value="//api/name/enabledToolbarClasses">enabledToolbarClasses</option>
+		
+		<option value="//api/name/enabledTouchResignedClasses">enabledTouchResignedClasses</option>
+		
+		<option value="//api/name/isTextViewContentInsetChanged">isTextViewContentInsetChanged</option>
+		
+		<option value="//api/name/keyboardAppearance">keyboardAppearance</option>
+		
+		<option value="//api/name/keyboardDistanceFromTextField">keyboardDistanceFromTextField</option>
+		
+		<option value="//api/name/keyboardShowing">keyboardShowing</option>
+		
+		<option value="//api/name/lastScrollView">lastScrollView</option>
+		
+		<option value="//api/name/layoutGuideConstraint">layoutGuideConstraint</option>
+		
+		<option value="//api/name/layoutGuideConstraintInitialConstant">layoutGuideConstraintInitialConstant</option>
+		
+		<option value="//api/name/layoutIfNeededOnUpdate">layoutIfNeededOnUpdate</option>
+		
+		<option value="//api/name/movedDistance">movedDistance</option>
+		
+		<option value="//api/name/overrideKeyboardAppearance">overrideKeyboardAppearance</option>
+		
+		<option value="//api/name/placeholderFont">placeholderFont</option>
+		
+		<option value="//api/name/preventShowingBottomBlankSpace">preventShowingBottomBlankSpace</option>
+		
+		<option value="//api/name/rootViewController">rootViewController</option>
+		
+		<option value="//api/name/shouldFixInteractivePopGestureRecognizer">shouldFixInteractivePopGestureRecognizer</option>
+		
+		<option value="//api/name/shouldHidePreviousNext">shouldHidePreviousNext</option>
+		
+		<option value="//api/name/shouldPlayInputClicks">shouldPlayInputClicks</option>
+		
+		<option value="//api/name/shouldResignOnTouchOutside">shouldResignOnTouchOutside</option>
+		
+		<option value="//api/name/shouldShowTextFieldPlaceholder">shouldShowTextFieldPlaceholder</option>
+		
+		<option value="//api/name/shouldToolbarUsesTextFieldTintColor">shouldToolbarUsesTextFieldTintColor</option>
+		
+		<option value="//api/name/startingContentInsets">startingContentInsets</option>
+		
+		<option value="//api/name/startingContentOffset">startingContentOffset</option>
+		
+		<option value="//api/name/startingScrollIndicatorInsets">startingScrollIndicatorInsets</option>
+		
+		<option value="//api/name/startingTextViewContentInsets">startingTextViewContentInsets</option>
+		
+		<option value="//api/name/startingTextViewScrollIndicatorInsets">startingTextViewScrollIndicatorInsets</option>
+		
+		<option value="//api/name/tapGesture">tapGesture</option>
+		
+		<option value="//api/name/textFieldView">textFieldView</option>
+		
+		<option value="//api/name/toolbarDoneBarButtonItemImage">toolbarDoneBarButtonItemImage</option>
+		
+		<option value="//api/name/toolbarDoneBarButtonItemText">toolbarDoneBarButtonItemText</option>
+		
+		<option value="//api/name/toolbarManageBehaviour">toolbarManageBehaviour</option>
+		
+		<option value="//api/name/toolbarPreviousNextAllowedClasses">toolbarPreviousNextAllowedClasses</option>
+		
+		<option value="//api/name/toolbarTintColor">toolbarTintColor</option>
+		
+		<option value="//api/name/topViewBeginRect">topViewBeginRect</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/load">+ load</option>
+		
+		<option value="//api/name/new">+ new</option>
+		
+		<option value="//api/name/sharedManager">+ sharedManager</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/addToolbarIfRequired">- addToolbarIfRequired</option>
+		
+		<option value="//api/name/didChangeStatusBarFrame:">- didChangeStatusBarFrame:</option>
+		
+		<option value="//api/name/doneAction:">- doneAction:</option>
+		
+		<option value="//api/name/gestureRecognizer:shouldReceiveTouch:">- gestureRecognizer:shouldReceiveTouch:</option>
+		
+		<option value="//api/name/gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:">- gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:</option>
+		
+		<option value="//api/name/goNext">- goNext</option>
+		
+		<option value="//api/name/goPrevious">- goPrevious</option>
+		
+		<option value="//api/name/init">- init</option>
+		
+		<option value="//api/name/keyWindow">- keyWindow</option>
+		
+		<option value="//api/name/nextAction:">- nextAction:</option>
+		
+		<option value="//api/name/previousAction:">- previousAction:</option>
+		
+		<option value="//api/name/registerTextFieldViewClass:didBeginEditingNotificationName:didEndEditingNotificationName:">- registerTextFieldViewClass:didBeginEditingNotificationName:didEndEditingNotificationName:</option>
+		
+		<option value="//api/name/reloadInputViews">- reloadInputViews</option>
+		
+		<option value="//api/name/reloadLayoutIfNeeded">- reloadLayoutIfNeeded</option>
+		
+		<option value="//api/name/removeToolbarIfRequired">- removeToolbarIfRequired</option>
+		
+		<option value="//api/name/resignFirstResponder">- resignFirstResponder</option>
+		
+		<option value="//api/name/responderViews">- responderViews</option>
+		
+		<option value="//api/name/tapRecognized:">- tapRecognized:</option>
+		
+		<option value="//api/name/textFieldViewDidBeginEditing:">- textFieldViewDidBeginEditing:</option>
+		
+		<option value="//api/name/textFieldViewDidEndEditing:">- textFieldViewDidEndEditing:</option>
+		
+		<option value="//api/name/willChangeStatusBarOrientation:">- willChangeStatusBarOrientation:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">IQKeyboardManager Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>IQKeyboardManager.h<br />IQKeyboardManager.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Codeless drop-in universal library allows to prevent issues of keyboard sliding up and cover UITextField/UITextView. Neither need to write any code nor any setup required and much more. A generic version of KeyboardManagement. <a href="https://developer.apple.com/library/ios/documentation/StringsTextFonts/Conceptual/TextAndWebiPhoneOS/KeyboardManagement/KeyboardManagement.html">https://developer.apple.com/library/ios/documentation/StringsTextFonts/Conceptual/TextAndWebiPhoneOS/KeyboardManagement/KeyboardManagement.html</a></p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						<a title="UIKeyboard handling" name="task_UIKeyboard handling"></a>
+						<h2 class="task-title">UIKeyboard handling</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/sharedManager" title="sharedManager"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sharedManager">+&nbsp;sharedManager</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the default singleton instance.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (nonnull instancetype)sharedManager</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns the default singleton instance.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/enable" title="enable"></a>
+	<h3 class="method-title"><code><a href="#//api/name/enable">&nbsp;&nbsp;enable</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Enable/disable managing distance between keyboard and textField. Default is YES(Enabled when class loads in <code>+(void)</code>load<code></code> method).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, getter=isEnabled) BOOL enable</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Enable/disable managing distance between keyboard and textField. Default is YES(Enabled when class loads in <code>+(void)</code>load<code></code> method).</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/keyboardDistanceFromTextField" title="keyboardDistanceFromTextField"></a>
+	<h3 class="method-title"><code><a href="#//api/name/keyboardDistanceFromTextField">&nbsp;&nbsp;keyboardDistanceFromTextField</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>To set keyboard distance from textField. can&rsquo;t be less than zero. Default is 10.0.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat keyboardDistanceFromTextField</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>To set keyboard distance from textField. can&rsquo;t be less than zero. Default is 10.0.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/preventShowingBottomBlankSpace" title="preventShowingBottomBlankSpace"></a>
+	<h3 class="method-title"><code><a href="#//api/name/preventShowingBottomBlankSpace">&nbsp;&nbsp;preventShowingBottomBlankSpace</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Prevent keyboard manager to slide up the rootView to more than keyboard height. Default is YES.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL preventShowingBottomBlankSpace</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Prevent keyboard manager to slide up the rootView to more than keyboard height. Default is YES.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/reloadLayoutIfNeeded" title="reloadLayoutIfNeeded"></a>
+	<h3 class="method-title"><code><a href="#//api/name/reloadLayoutIfNeeded">&ndash;&nbsp;reloadLayoutIfNeeded</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Refreshes textField/textView position if any external changes is explicitly made by user.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)reloadLayoutIfNeeded</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Refreshes textField/textView position if any external changes is explicitly made by user.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/keyboardShowing" title="keyboardShowing"></a>
+	<h3 class="method-title"><code><a href="#//api/name/keyboardShowing">&nbsp;&nbsp;keyboardShowing</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Boolean to know if keyboard is showing.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly, getter=isKeyboardShowing) BOOL keyboardShowing</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Boolean to know if keyboard is showing.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/movedDistance" title="movedDistance"></a>
+	<h3 class="method-title"><code><a href="#//api/name/movedDistance">&nbsp;&nbsp;movedDistance</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>moved distance to the top used to maintain distance between keyboard and textField. Most of the time this will be a positive value.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) CGFloat movedDistance</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>moved distance to the top used to maintain distance between keyboard and textField. Most of the time this will be a positive value.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="IQToolbar handling" name="task_IQToolbar handling"></a>
+						<h2 class="task-title">IQToolbar handling</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/enableAutoToolbar" title="enableAutoToolbar"></a>
+	<h3 class="method-title"><code><a href="#//api/name/enableAutoToolbar">&nbsp;&nbsp;enableAutoToolbar</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Automatic add <a href="../Classes/IQToolbar.html">IQToolbar</a> functionality. Default is YES.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, getter=isEnableAutoToolbar) BOOL enableAutoToolbar</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Automatic add <a href="../Classes/IQToolbar.html">IQToolbar</a> functionality. Default is YES.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/toolbarManageBehaviour" title="toolbarManageBehaviour"></a>
+	<h3 class="method-title"><code><a href="#//api/name/toolbarManageBehaviour">&nbsp;&nbsp;toolbarManageBehaviour</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AutoToolbar managing behaviour. Default is IQAutoToolbarBySubviews.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) IQAutoToolbarManageBehaviour toolbarManageBehaviour</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>AutoToolbar managing behaviour. Default is IQAutoToolbarBySubviews.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/shouldToolbarUsesTextFieldTintColor" title="shouldToolbarUsesTextFieldTintColor"></a>
+	<h3 class="method-title"><code><a href="#//api/name/shouldToolbarUsesTextFieldTintColor">&nbsp;&nbsp;shouldToolbarUsesTextFieldTintColor</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>If YES, then uses textField&rsquo;s tintColor property for <a href="../Classes/IQToolbar.html">IQToolbar</a>, otherwise tint color is black. Default is NO.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL shouldToolbarUsesTextFieldTintColor</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>If YES, then uses textField&rsquo;s tintColor property for <a href="../Classes/IQToolbar.html">IQToolbar</a>, otherwise tint color is black. Default is NO.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/toolbarTintColor" title="toolbarTintColor"></a>
+	<h3 class="method-title"><code><a href="#//api/name/toolbarTintColor">&nbsp;&nbsp;toolbarTintColor</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This is used for toolbar.tintColor when textfield.<a href="#//api/name/keyboardAppearance">keyboardAppearance</a> is UIKeyboardAppearanceDefault. If <a href="#//api/name/shouldToolbarUsesTextFieldTintColor">shouldToolbarUsesTextFieldTintColor</a> is YES then this property is ignored. Default is nil and uses black color.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nullable, nonatomic, strong) UIColor *toolbarTintColor</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This is used for toolbar.tintColor when textfield.<a href="#//api/name/keyboardAppearance">keyboardAppearance</a> is UIKeyboardAppearanceDefault. If <a href="#//api/name/shouldToolbarUsesTextFieldTintColor">shouldToolbarUsesTextFieldTintColor</a> is YES then this property is ignored. Default is nil and uses black color.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/shouldHidePreviousNext" title="shouldHidePreviousNext"></a>
+	<h3 class="method-title"><code><a href="#//api/name/shouldHidePreviousNext">&nbsp;&nbsp;shouldHidePreviousNext</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>If YES, then hide previous/next button. Default is NO.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL shouldHidePreviousNext</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>If YES, then hide previous/next button. Default is NO.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/toolbarDoneBarButtonItemImage" title="toolbarDoneBarButtonItemImage"></a>
+	<h3 class="method-title"><code><a href="#//api/name/toolbarDoneBarButtonItemImage">&nbsp;&nbsp;toolbarDoneBarButtonItemImage</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Toolbar done button icon, If nothing is provided then check <a href="#//api/name/toolbarDoneBarButtonItemText">toolbarDoneBarButtonItemText</a> to draw done button.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nullable, nonatomic, strong) UIImage *toolbarDoneBarButtonItemImage</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Toolbar done button icon, If nothing is provided then check <a href="#//api/name/toolbarDoneBarButtonItemText">toolbarDoneBarButtonItemText</a> to draw done button.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/toolbarDoneBarButtonItemText" title="toolbarDoneBarButtonItemText"></a>
+	<h3 class="method-title"><code><a href="#//api/name/toolbarDoneBarButtonItemText">&nbsp;&nbsp;toolbarDoneBarButtonItemText</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Toolbar done button text, If nothing is provided then system default &lsquo;UIBarButtonSystemItemDone&rsquo; will be used.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nullable, nonatomic, strong) NSString *toolbarDoneBarButtonItemText</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Toolbar done button text, If nothing is provided then system default &lsquo;UIBarButtonSystemItemDone&rsquo; will be used.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/shouldShowTextFieldPlaceholder" title="shouldShowTextFieldPlaceholder"></a>
+	<h3 class="method-title"><code><a href="#//api/name/shouldShowTextFieldPlaceholder">&nbsp;&nbsp;shouldShowTextFieldPlaceholder</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>If YES, then it add the textField&rsquo;s placeholder text on <a href="../Classes/IQToolbar.html">IQToolbar</a>. Default is YES.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL shouldShowTextFieldPlaceholder</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>If YES, then it add the textField&rsquo;s placeholder text on <a href="../Classes/IQToolbar.html">IQToolbar</a>. Default is YES.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/placeholderFont" title="placeholderFont"></a>
+	<h3 class="method-title"><code><a href="#//api/name/placeholderFont">&nbsp;&nbsp;placeholderFont</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Placeholder Font. Default is nil.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nullable, nonatomic, strong) UIFont *placeholderFont</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Placeholder Font. Default is nil.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/reloadInputViews" title="reloadInputViews"></a>
+	<h3 class="method-title"><code><a href="#//api/name/reloadInputViews">&ndash;&nbsp;reloadInputViews</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Re<a href="#//api/name/load">load</a> all toolbar buttons on the fly.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)reloadInputViews</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Re<a href="#//api/name/load">load</a> all toolbar buttons on the fly.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="UIKeyboard appearance overriding" name="task_UIKeyboard appearance overriding"></a>
+						<h2 class="task-title">UIKeyboard appearance overriding</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/overrideKeyboardAppearance" title="overrideKeyboardAppearance"></a>
+	<h3 class="method-title"><code><a href="#//api/name/overrideKeyboardAppearance">&nbsp;&nbsp;overrideKeyboardAppearance</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Override the <a href="#//api/name/keyboardAppearance">keyboardAppearance</a> for all textField/textView. Default is NO.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL overrideKeyboardAppearance</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Override the <a href="#//api/name/keyboardAppearance">keyboardAppearance</a> for all textField/textView. Default is NO.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/keyboardAppearance" title="keyboardAppearance"></a>
+	<h3 class="method-title"><code><a href="#//api/name/keyboardAppearance">&nbsp;&nbsp;keyboardAppearance</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>If <a href="#//api/name/overrideKeyboardAppearance">overrideKeyboardAppearance</a> is YES, then all the textField keyboardAppearance is set using this property.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) UIKeyboardAppearance keyboardAppearance</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>If <a href="#//api/name/overrideKeyboardAppearance">overrideKeyboardAppearance</a> is YES, then all the textField keyboardAppearance is set using this property.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="UITextField/UITextView Next/Previous/Resign handling" name="task_UITextField/UITextView Next/Previous/Resign handling"></a>
+						<h2 class="task-title">UITextField/UITextView Next/Previous/Resign handling</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/shouldResignOnTouchOutside" title="shouldResignOnTouchOutside"></a>
+	<h3 class="method-title"><code><a href="#//api/name/shouldResignOnTouchOutside">&nbsp;&nbsp;shouldResignOnTouchOutside</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Resigns Keyboard on touching outside of UITextField/View. Default is NO.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL shouldResignOnTouchOutside</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Resigns Keyboard on touching outside of UITextField/View. Default is NO.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/resignFirstResponder" title="resignFirstResponder"></a>
+	<h3 class="method-title"><code><a href="#//api/name/resignFirstResponder">&ndash;&nbsp;resignFirstResponder</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Resigns currently first responder field.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)resignFirstResponder</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Resigns currently first responder field.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/canGoPrevious" title="canGoPrevious"></a>
+	<h3 class="method-title"><code><a href="#//api/name/canGoPrevious">&nbsp;&nbsp;canGoPrevious</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns YES if can navigate to previous responder textField/textView, otherwise NO.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) BOOL canGoPrevious</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns YES if can navigate to previous responder textField/textView, otherwise NO.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/canGoNext" title="canGoNext"></a>
+	<h3 class="method-title"><code><a href="#//api/name/canGoNext">&nbsp;&nbsp;canGoNext</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns YES if can navigate to next responder textField/textView, otherwise NO.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) BOOL canGoNext</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns YES if can navigate to next responder textField/textView, otherwise NO.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/goPrevious" title="goPrevious"></a>
+	<h3 class="method-title"><code><a href="#//api/name/goPrevious">&ndash;&nbsp;goPrevious</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Navigate to previous responder textField/textView.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)goPrevious</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Navigate to previous responder textField/textView.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/goNext" title="goNext"></a>
+	<h3 class="method-title"><code><a href="#//api/name/goNext">&ndash;&nbsp;goNext</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Navigate to next responder textField/textView.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)goNext</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Navigate to next responder textField/textView.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="UISound handling" name="task_UISound handling"></a>
+						<h2 class="task-title">UISound handling</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/shouldPlayInputClicks" title="shouldPlayInputClicks"></a>
+	<h3 class="method-title"><code><a href="#//api/name/shouldPlayInputClicks">&nbsp;&nbsp;shouldPlayInputClicks</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>If YES, then it plays inputClick sound on next/previous/done click. Default is YES.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL shouldPlayInputClicks</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>If YES, then it plays inputClick sound on next/previous/done click. Default is YES.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="UIAnimation handling" name="task_UIAnimation handling"></a>
+						<h2 class="task-title">UIAnimation handling</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/layoutIfNeededOnUpdate" title="layoutIfNeededOnUpdate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/layoutIfNeededOnUpdate">&nbsp;&nbsp;layoutIfNeededOnUpdate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>If YES, then calls &lsquo;setNeedsLayout&rsquo; and &lsquo;layoutIfNeeded&rsquo; on any frame update of to viewController&rsquo;s view.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL layoutIfNeededOnUpdate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>If YES, then calls &lsquo;setNeedsLayout&rsquo; and &lsquo;layoutIfNeeded&rsquo; on any frame update of to viewController&rsquo;s view.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="InteractivePopGestureRecognizer handling" name="task_InteractivePopGestureRecognizer handling"></a>
+						<h2 class="task-title">InteractivePopGestureRecognizer handling</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/shouldFixInteractivePopGestureRecognizer" title="shouldFixInteractivePopGestureRecognizer"></a>
+	<h3 class="method-title"><code><a href="#//api/name/shouldFixInteractivePopGestureRecognizer">&nbsp;&nbsp;shouldFixInteractivePopGestureRecognizer</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>If YES, then always consider UINavigationController.view begin point as {0,0}, this is a workaround to fix a bug #464 because there are no notification mechanism exist when UINavigationController.view.frame gets changed internally.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL shouldFixInteractivePopGestureRecognizer</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>If YES, then always consider UINavigationController.view begin point as {0,0}, this is a workaround to fix a bug #464 because there are no notification mechanism exist when UINavigationController.view.frame gets changed internally.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Class Level enabling/disabling methods" name="task_Class Level enabling/disabling methods"></a>
+						<h2 class="task-title">Class Level enabling/disabling methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/disabledDistanceHandlingClasses" title="disabledDistanceHandlingClasses"></a>
+	<h3 class="method-title"><code><a href="#//api/name/disabledDistanceHandlingClasses">&nbsp;&nbsp;disabledDistanceHandlingClasses</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Disable distance handling within the scope of disabled distance handling viewControllers classes. Within this scope, &lsquo;enabled&rsquo; property is ignored. Class should be kind of UIViewController.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, nonnull, readonly) NSMutableSet&lt;Class&gt; *disabledDistanceHandlingClasses</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Disable distance handling within the scope of disabled distance handling viewControllers classes. Within this scope, &lsquo;enabled&rsquo; property is ignored. Class should be kind of UIViewController.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/enabledDistanceHandlingClasses" title="enabledDistanceHandlingClasses"></a>
+	<h3 class="method-title"><code><a href="#//api/name/enabledDistanceHandlingClasses">&nbsp;&nbsp;enabledDistanceHandlingClasses</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Enable distance handling within the scope of enabled distance handling viewControllers classes. Within this scope, &lsquo;enabled&rsquo; property is ignored. Class should be kind of UIViewController. If same Class is added in <a href="#//api/name/disabledDistanceHandlingClasses">disabledDistanceHandlingClasses</a> list, then enabledDistanceHandlingClasses will we ignored.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, nonnull, readonly) NSMutableSet&lt;Class&gt; *enabledDistanceHandlingClasses</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Enable distance handling within the scope of enabled distance handling viewControllers classes. Within this scope, &lsquo;enabled&rsquo; property is ignored. Class should be kind of UIViewController. If same Class is added in <a href="#//api/name/disabledDistanceHandlingClasses">disabledDistanceHandlingClasses</a> list, then enabledDistanceHandlingClasses will we ignored.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/disabledToolbarClasses" title="disabledToolbarClasses"></a>
+	<h3 class="method-title"><code><a href="#//api/name/disabledToolbarClasses">&nbsp;&nbsp;disabledToolbarClasses</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Disable automatic toolbar creation within the scope of disabled toolbar viewControllers classes. Within this scope, &lsquo;enableAutoToolbar&rsquo; property is ignored. Class should be kind of UIViewController.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, nonnull, readonly) NSMutableSet&lt;Class&gt; *disabledToolbarClasses</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Disable automatic toolbar creation within the scope of disabled toolbar viewControllers classes. Within this scope, &lsquo;enableAutoToolbar&rsquo; property is ignored. Class should be kind of UIViewController.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/enabledToolbarClasses" title="enabledToolbarClasses"></a>
+	<h3 class="method-title"><code><a href="#//api/name/enabledToolbarClasses">&nbsp;&nbsp;enabledToolbarClasses</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Enable automatic toolbar creation within the scope of enabled toolbar viewControllers classes. Within this scope, &lsquo;enableAutoToolbar&rsquo; property is ignored. Class should be kind of UIViewController. If same Class is added in <a href="#//api/name/disabledToolbarClasses">disabledToolbarClasses</a> list, then enabledToolbarClasses will be ignored.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, nonnull, readonly) NSMutableSet&lt;Class&gt; *enabledToolbarClasses</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Enable automatic toolbar creation within the scope of enabled toolbar viewControllers classes. Within this scope, &lsquo;enableAutoToolbar&rsquo; property is ignored. Class should be kind of UIViewController. If same Class is added in <a href="#//api/name/disabledToolbarClasses">disabledToolbarClasses</a> list, then enabledToolbarClasses will be ignored.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/toolbarPreviousNextAllowedClasses" title="toolbarPreviousNextAllowedClasses"></a>
+	<h3 class="method-title"><code><a href="#//api/name/toolbarPreviousNextAllowedClasses">&nbsp;&nbsp;toolbarPreviousNextAllowedClasses</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Allowed subclasses of UIView to add all inner textField, this will allow to navigate between textField contains in different superview. Class should be kind of UIView.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, nonnull, readonly) NSMutableSet&lt;Class&gt; *toolbarPreviousNextAllowedClasses</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Allowed subclasses of UIView to add all inner textField, this will allow to navigate between textField contains in different superview. Class should be kind of UIView.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/disabledTouchResignedClasses" title="disabledTouchResignedClasses"></a>
+	<h3 class="method-title"><code><a href="#//api/name/disabledTouchResignedClasses">&nbsp;&nbsp;disabledTouchResignedClasses</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Disabled classes to ignore &lsquo;shouldResignOnTouchOutside&rsquo; property, Class should be kind of UIViewController.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, nonnull, readonly) NSMutableSet&lt;Class&gt; *disabledTouchResignedClasses</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Disabled classes to ignore &lsquo;shouldResignOnTouchOutside&rsquo; property, Class should be kind of UIViewController.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/enabledTouchResignedClasses" title="enabledTouchResignedClasses"></a>
+	<h3 class="method-title"><code><a href="#//api/name/enabledTouchResignedClasses">&nbsp;&nbsp;enabledTouchResignedClasses</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Enabled classes to forcefully <a href="#//api/name/enable">enable</a> &lsquo;shouldResignOnTouchOutsite&rsquo; property. Class should be kind of UIViewController. If same Class is added in <a href="#//api/name/disabledTouchResignedClasses">disabledTouchResignedClasses</a> list, then enabledTouchResignedClasses will be ignored.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, nonnull, readonly) NSMutableSet&lt;Class&gt; *enabledTouchResignedClasses</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Enabled classes to forcefully <a href="#//api/name/enable">enable</a> &lsquo;shouldResignOnTouchOutsite&rsquo; property. Class should be kind of UIViewController. If same Class is added in <a href="#//api/name/disabledTouchResignedClasses">disabledTouchResignedClasses</a> list, then enabledTouchResignedClasses will be ignored.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Third Party Library support" name="task_Third Party Library support"></a>
+						<h2 class="task-title">Third Party Library support</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/registerTextFieldViewClass:didBeginEditingNotificationName:didEndEditingNotificationName:" title="registerTextFieldViewClass:didBeginEditingNotificationName:didEndEditingNotificationName:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/registerTextFieldViewClass:didBeginEditingNotificationName:didEndEditingNotificationName:">&ndash;&nbsp;registerTextFieldViewClass:didBeginEditingNotificationName:didEndEditingNotificationName:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Add customised Notification for third party customised TextField/TextView. Please be aware that the NSNotification object must be idential to UITextField/UITextView NSNotification objects and customised TextField/TextView support must be idential to UITextField/UITextView.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)registerTextFieldViewClass:(nonnull Class)<em>aClass</em> didBeginEditingNotificationName:(nonnull NSString *)<em>didBeginEditingNotificationName</em> didEndEditingNotificationName:(nonnull NSString *)<em>didEndEditingNotificationName</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>didBeginEditingNotificationName</code></th>
+						<td><p>This should be identical to UITextViewTextDidBeginEditingNotification</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>didEndEditingNotificationName</code></th>
+						<td><p>This should be identical to UITextViewTextDidEndEditingNotification</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Add customised Notification for third party customised TextField/TextView. Please be aware that the NSNotification object must be idential to UITextField/UITextView NSNotification objects and customised TextField/TextView support must be idential to UITextField/UITextView.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Must not be used for subclassing." name="task_Must not be used for subclassing."></a>
+						<h2 class="task-title">Must not be used for subclassing.</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="method-title"><code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Unavailable. Please use <a href="#//api/name/sharedManager">sharedManager</a> method</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nonnull instancetype)init</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Unavailable. Please use <a href="#//api/name/sharedManager">sharedManager</a> method</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/new" title="new"></a>
+	<h3 class="method-title"><code><a href="#//api/name/new">+&nbsp;new</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Unavailable. Please use <a href="#//api/name/sharedManager">sharedManager</a> method</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (nonnull instancetype)new</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Unavailable. Please use <a href="#//api/name/sharedManager">sharedManager</a> method</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/load" title="load"></a>
+	<h3 class="method-title"><code><a href="#//api/name/load">+&nbsp;load</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Override +load method to <a href="#//api/name/enable">enable</a> KeyboardManager when class loader load IQKeyboardManager. Enabling when app starts (No need to write any code)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)load</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Override +load method to <a href="#//api/name/enable">enable</a> KeyboardManager when class loader load IQKeyboardManager. Enabling when app starts (No need to write any code)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/keyWindow" title="keyWindow"></a>
+	<h3 class="method-title"><code><a href="#//api/name/keyWindow">&ndash;&nbsp;keyWindow</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Getting keyWindow.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (UIWindow *)keyWindow</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Getting keyWindow.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/textFieldViewDidBeginEditing:" title="textFieldViewDidBeginEditing:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/textFieldViewDidBeginEditing:">&ndash;&nbsp;textFieldViewDidBeginEditing:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  UITextFieldTextDidBeginEditingNotification, UITextViewTextDidBeginEditingNotification. Fetching UITextFieldView object.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)textFieldViewDidBeginEditing:(NSNotification *)<em>notification</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>  UITextFieldTextDidBeginEditingNotification, UITextViewTextDidBeginEditingNotification. Fetching UITextFieldView object.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/textFieldViewDidEndEditing:" title="textFieldViewDidEndEditing:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/textFieldViewDidEndEditing:">&ndash;&nbsp;textFieldViewDidEndEditing:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  UITextFieldTextDidEndEditingNotification, UITextViewTextDidEndEditingNotification. Removing fetched object.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)textFieldViewDidEndEditing:(NSNotification *)<em>notification</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>  UITextFieldTextDidEndEditingNotification, UITextViewTextDidEndEditingNotification. Removing fetched object.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/willChangeStatusBarOrientation:" title="willChangeStatusBarOrientation:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/willChangeStatusBarOrientation:">&ndash;&nbsp;willChangeStatusBarOrientation:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  UIApplicationWillChangeStatusBarOrientationNotification. Need to set the textView to it&rsquo;s original position. If any frame changes made. (Bug ID: #92)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)willChangeStatusBarOrientation:(NSNotification *)<em>aNotification</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>  UIApplicationWillChangeStatusBarOrientationNotification. Need to set the textView to it&rsquo;s original position. If any frame changes made. (Bug ID: #92)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/didChangeStatusBarFrame:" title="didChangeStatusBarFrame:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didChangeStatusBarFrame:">&ndash;&nbsp;didChangeStatusBarFrame:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  UIApplicationDidChangeStatusBarFrameNotification. Need to refresh view position and update _<a href="#//api/name/topViewBeginRect">topViewBeginRect</a>. (Bug ID: #446)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)didChangeStatusBarFrame:(NSNotification *)<em>aNotification</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>  UIApplicationDidChangeStatusBarFrameNotification. Need to refresh view position and update _<a href="#//api/name/topViewBeginRect">topViewBeginRect</a>. (Bug ID: #446)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/tapRecognized:" title="tapRecognized:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/tapRecognized:">&ndash;&nbsp;tapRecognized:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Resigning on tap gesture.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)tapRecognized:(UITapGestureRecognizer *)<em>gesture</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Resigning on tap gesture.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:" title="gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:">&ndash;&nbsp;gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Note: returning YES is guaranteed to allow simultaneous recognition. returning NO is not guaranteed to prevent simultaneous recognition, as the other gesture&rsquo;s delegate may return YES.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)gestureRecognizer:(UIGestureRecognizer *)<em>gestureRecognizer</em> shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)<em>otherGestureRecognizer</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Note: returning YES is guaranteed to allow simultaneous recognition. returning NO is not guaranteed to prevent simultaneous recognition, as the other gesture&rsquo;s delegate may return YES.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/gestureRecognizer:shouldReceiveTouch:" title="gestureRecognizer:shouldReceiveTouch:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/gestureRecognizer:shouldReceiveTouch:">&ndash;&nbsp;gestureRecognizer:shouldReceiveTouch:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>To not detect touch events in a subclass of UIControl, these may have added their own selector for specific work</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)gestureRecognizer:(UIGestureRecognizer *)<em>gestureRecognizer</em> shouldReceiveTouch:(UITouch *)<em>touch</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>To not detect touch events in a subclass of UIControl, these may have added their own selector for specific work</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/responderViews" title="responderViews"></a>
+	<h3 class="method-title"><code><a href="#//api/name/responderViews">&ndash;&nbsp;responderViews</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<pre><code>Get all UITextField/UITextView siblings of textFieldView. 
+</code></pre>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray *)responderViews</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<pre><code>Get all UITextField/UITextView siblings of textFieldView. 
+</code></pre>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addToolbarIfRequired" title="addToolbarIfRequired"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addToolbarIfRequired">&ndash;&nbsp;addToolbarIfRequired</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Add toolbar if it is required to add on textFields and it&rsquo;s siblings.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addToolbarIfRequired</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Add toolbar if it is required to add on textFields and it&rsquo;s siblings.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeToolbarIfRequired" title="removeToolbarIfRequired"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeToolbarIfRequired">&ndash;&nbsp;removeToolbarIfRequired</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Remove any toolbar if it is <a href="../Classes/IQToolbar.html">IQToolbar</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)removeToolbarIfRequired</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Remove any toolbar if it is <a href="../Classes/IQToolbar.html">IQToolbar</a>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/previousAction:" title="previousAction:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/previousAction:">&ndash;&nbsp;previousAction:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<pre><code>previousAction. 
+</code></pre>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)previousAction:(id)<em>segmentedControl</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<pre><code>previousAction. 
+</code></pre>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/nextAction:" title="nextAction:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/nextAction:">&ndash;&nbsp;nextAction:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<pre><code>nextAction. 
+</code></pre>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)nextAction:(id)<em>segmentedControl</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<pre><code>nextAction. 
+</code></pre>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/doneAction:" title="doneAction:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/doneAction:">&ndash;&nbsp;doneAction:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<pre><code>doneAction. Resigning current textField. 
+</code></pre>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)doneAction:(IQBarButtonItem *)<em>barButton</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<pre><code>doneAction. Resigning current textField. 
+</code></pre>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Extension Methods" name="task_Extension Methods"></a>
+						<h2 class="task-title">Extension Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/startingTextViewContentInsets" title="startingTextViewContentInsets"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startingTextViewContentInsets">&nbsp;&nbsp;startingTextViewContentInsets</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>used to adjust contentInset of UITextView.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) UIEdgeInsets startingTextViewContentInsets</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>used to adjust contentInset of UITextView.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startingTextViewScrollIndicatorInsets" title="startingTextViewScrollIndicatorInsets"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startingTextViewScrollIndicatorInsets">&nbsp;&nbsp;startingTextViewScrollIndicatorInsets</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>used to adjust scrollIndicatorInsets of UITextView.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) UIEdgeInsets startingTextViewScrollIndicatorInsets</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>used to adjust scrollIndicatorInsets of UITextView.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isTextViewContentInsetChanged" title="isTextViewContentInsetChanged"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isTextViewContentInsetChanged">&nbsp;&nbsp;isTextViewContentInsetChanged</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>used with textView to detect a <a href="#//api/name/textFieldView">textFieldView</a> contentInset is changed or not. (Bug ID: #92)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL isTextViewContentInsetChanged</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>used with textView to detect a <a href="#//api/name/textFieldView">textFieldView</a> contentInset is changed or not. (Bug ID: #92)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/textFieldView" title="textFieldView"></a>
+	<h3 class="method-title"><code><a href="#//api/name/textFieldView">&nbsp;&nbsp;textFieldView</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>To save UITextField/UITextView object voa textField/textView notifications.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) UIView *textFieldView</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>To save UITextField/UITextView object voa textField/textView notifications.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/topViewBeginRect" title="topViewBeginRect"></a>
+	<h3 class="method-title"><code><a href="#//api/name/topViewBeginRect">&nbsp;&nbsp;topViewBeginRect</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>To save <a href="#//api/name/rootViewController">rootViewController</a>.view.frame.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGRect topViewBeginRect</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>To save <a href="#//api/name/rootViewController">rootViewController</a>.view.frame.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/rootViewController" title="rootViewController"></a>
+	<h3 class="method-title"><code><a href="#//api/name/rootViewController">&nbsp;&nbsp;rootViewController</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>To save rootViewController</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) UIViewController *rootViewController</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>To save rootViewController</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/layoutGuideConstraintInitialConstant" title="layoutGuideConstraintInitialConstant"></a>
+	<h3 class="method-title"><code><a href="#//api/name/layoutGuideConstraintInitialConstant">&nbsp;&nbsp;layoutGuideConstraintInitialConstant</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>To save topBottomLayoutConstraint original constant</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat layoutGuideConstraintInitialConstant</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>To save topBottomLayoutConstraint original constant</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/layoutGuideConstraint" title="layoutGuideConstraint"></a>
+	<h3 class="method-title"><code><a href="#//api/name/layoutGuideConstraint">&nbsp;&nbsp;layoutGuideConstraint</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>To save topBottomLayoutConstraint original constraint reference</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) NSLayoutConstraint *layoutGuideConstraint</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>To save topBottomLayoutConstraint original constraint reference</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/tapGesture" title="tapGesture"></a>
+	<h3 class="method-title"><code><a href="#//api/name/tapGesture">&nbsp;&nbsp;tapGesture</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>TapGesture to resign keyboard on view&rsquo;s touch.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) UITapGestureRecognizer *tapGesture</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>TapGesture to resign keyboard on view&rsquo;s touch.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/lastScrollView" title="lastScrollView"></a>
+	<h3 class="method-title"><code><a href="#//api/name/lastScrollView">&nbsp;&nbsp;lastScrollView</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Variable to save lastScrollView that was scrolled.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) UIScrollView *lastScrollView</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Variable to save lastScrollView that was scrolled.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startingContentInsets" title="startingContentInsets"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startingContentInsets">&nbsp;&nbsp;startingContentInsets</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>LastScrollView&rsquo;s initial contentInsets.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) UIEdgeInsets startingContentInsets</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>LastScrollView&rsquo;s initial contentInsets.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startingScrollIndicatorInsets" title="startingScrollIndicatorInsets"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startingScrollIndicatorInsets">&nbsp;&nbsp;startingScrollIndicatorInsets</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>LastScrollView&rsquo;s initial scrollIndicatorInsets.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) UIEdgeInsets startingScrollIndicatorInsets</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>LastScrollView&rsquo;s initial scrollIndicatorInsets.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startingContentOffset" title="startingContentOffset"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startingContentOffset">&nbsp;&nbsp;startingContentOffset</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>LastScrollView&rsquo;s initial contentOffset.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGPoint startingContentOffset</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>LastScrollView&rsquo;s initial contentOffset.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/animationDuration" title="animationDuration"></a>
+	<h3 class="method-title"><code><a href="#//api/name/animationDuration">&nbsp;&nbsp;animationDuration</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>To save keyboard animation duration.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat animationDuration</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>To save keyboard animation duration.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/animationCurve" title="animationCurve"></a>
+	<h3 class="method-title"><code><a href="#//api/name/animationCurve">&nbsp;&nbsp;animationCurve</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>To mimic the keyboard animation</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) NSInteger animationCurve</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>To mimic the keyboard animation</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQKeyboardManager.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 qudian. All rights reserved. Updated: 2016-11-29</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

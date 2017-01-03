@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>QDAlertView Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">qudianDoc </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">qudian</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/showUnknownErrorWithErrorTitle:errorMessage:btnTitle:reloadBlock:">+ showUnknownErrorWithErrorTitle:errorMessage:btnTitle:reloadBlock:</option>
+		
+		<option value="//api/name/showWithTitle:contentMsg:cancelBtnTitle:ensureBtnTitle:handle:">+ showWithTitle:contentMsg:cancelBtnTitle:ensureBtnTitle:handle:</option>
+		
+		<option value="//api/name/showWithTitle:contentMsg:tipMsg:errorMsg:cancelBtnTitle:ensureBtnTitle:handle:">+ showWithTitle:contentMsg:tipMsg:errorMsg:cancelBtnTitle:ensureBtnTitle:handle:</option>
+		
+		<option value="//api/name/showWithTitle:instalmentArray:">+ showWithTitle:instalmentArray:</option>
+		
+		<option value="//api/name/showWithTitle:message:cancelTitle:otherTitle:confirm:cancle:">+ showWithTitle:message:cancelTitle:otherTitle:confirm:cancle:</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/closeAlertView">- closeAlertView</option>
+		
+		<option value="//api/name/configErrorMsg:">- configErrorMsg:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">QDAlertView Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>UIView</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>QDAlertView.h<br />QDAlertView.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/showWithTitle:contentMsg:cancelBtnTitle:ensureBtnTitle:handle:" title="showWithTitle:contentMsg:cancelBtnTitle:ensureBtnTitle:handle:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showWithTitle:contentMsg:cancelBtnTitle:ensureBtnTitle:handle:">+&nbsp;showWithTitle:contentMsg:cancelBtnTitle:ensureBtnTitle:handle:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>自定义弹窗(普通样式)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)showWithTitle:(NSString *)<em>title</em> contentMsg:(NSString *)<em>contentMsg</em> cancelBtnTitle:(NSString *)<em>cancelBtnTitle</em> ensureBtnTitle:(NSString *)<em>ensureBtnTitle</em> handle:(void ( ^ ) ( QDAlertView *alertView , AlertBtnType btnType ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>title</code></th>
+						<td><p>弹窗标题</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>contentMsg</code></th>
+						<td><p>弹窗内容</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>cancelBtnTitle</code></th>
+						<td><p>弹窗底部取消按钮标题</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>ensureBtnTitle</code></th>
+						<td><p>弹窗底部确认按钮标题</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>事件回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>自定义弹窗(普通样式)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">QDAlertView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/showWithTitle:message:cancelTitle:otherTitle:confirm:cancle:" title="showWithTitle:message:cancelTitle:otherTitle:confirm:cancle:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showWithTitle:message:cancelTitle:otherTitle:confirm:cancle:">+&nbsp;showWithTitle:message:cancelTitle:otherTitle:confirm:cancle:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>系统弹窗(普通样式)
+*</li>
+<li>@param title          弹窗标题</li>
+<li>@param contentMsg     弹窗内容</li>
+<li>@param cancelTitle    弹窗底部取消按钮标题</li>
+<li>@param otherTitle     弹窗底部确认按钮标题</li>
+<li>@param confirm        事件回调</li>
+<li>@param cancle         事件回调</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)showWithTitle:(NSString *)<em>title</em> message:(NSString *)<em>message</em> cancelTitle:(NSString *)<em>cancelTitle</em> otherTitle:(NSString *)<em>otherTitle</em> confirm:(void ( ^ ) ( ))<em>confirm</em> cancle:(void ( ^ ) ( ))<em>cancle</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<ul>
+<li>系统弹窗(普通样式)
+*</li>
+<li>@param title          弹窗标题</li>
+<li>@param contentMsg     弹窗内容</li>
+<li>@param cancelTitle    弹窗底部取消按钮标题</li>
+<li>@param otherTitle     弹窗底部确认按钮标题</li>
+<li>@param confirm        事件回调</li>
+<li>@param cancle         事件回调</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">QDAlertView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/showWithTitle:contentMsg:tipMsg:errorMsg:cancelBtnTitle:ensureBtnTitle:handle:" title="showWithTitle:contentMsg:tipMsg:errorMsg:cancelBtnTitle:ensureBtnTitle:handle:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showWithTitle:contentMsg:tipMsg:errorMsg:cancelBtnTitle:ensureBtnTitle:handle:">+&nbsp;showWithTitle:contentMsg:tipMsg:errorMsg:cancelBtnTitle:ensureBtnTitle:handle:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>自定义弹窗(短信弹窗特殊样式)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)showWithTitle:(NSString *)<em>title</em> contentMsg:(NSAttributedString *)<em>contentMsg</em> tipMsg:(NSString *)<em>tipMsg</em> errorMsg:(NSString *)<em>errorMsg</em> cancelBtnTitle:(NSString *)<em>cancelBtnTitle</em> ensureBtnTitle:(NSString *)<em>ensureBtnTitle</em> handle:(void ( ^ ) ( QDAlertView *alertView , AlertBtnType btnType ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>title</code></th>
+						<td><p>弹窗标题</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>contentMsg</code></th>
+						<td><p>弹窗内容</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>tipMsg</code></th>
+						<td><p>弹窗提示文字</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>errorMsg</code></th>
+						<td><p>弹窗错误文字</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>cancelBtnTitle</code></th>
+						<td><p>弹窗底部取消按钮标题</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>ensureBtnTitle</code></th>
+						<td><p>弹窗底部确定按钮标题</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>事件回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>自定义弹窗(短信弹窗特殊样式)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">QDAlertView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/showWithTitle:instalmentArray:" title="showWithTitle:instalmentArray:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showWithTitle:instalmentArray:">+&nbsp;showWithTitle:instalmentArray:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>自定义弹窗(分期明细特殊样式)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)showWithTitle:(NSString *)<em>title</em> instalmentArray:(NSArray *)<em>instalmentArray</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>title</code></th>
+						<td><p>弹窗标题</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>instalmentArray</code></th>
+						<td><p>分期明细数组</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>自定义弹窗(分期明细特殊样式)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">QDAlertView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/showUnknownErrorWithErrorTitle:errorMessage:btnTitle:reloadBlock:" title="showUnknownErrorWithErrorTitle:errorMessage:btnTitle:reloadBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showUnknownErrorWithErrorTitle:errorMessage:btnTitle:reloadBlock:">+&nbsp;showUnknownErrorWithErrorTitle:errorMessage:btnTitle:reloadBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>自定义弹窗(发生未知错误刷新样式)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)showUnknownErrorWithErrorTitle:(NSString *)<em>errorTitle</em> errorMessage:(NSString *)<em>errorMessage</em> btnTitle:(NSString *)<em>btnTitle</em> reloadBlock:(void ( ^ ) ( void ))<em>reloadBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>errorTitle</code></th>
+						<td><p>错误标题</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>errorMessage</code></th>
+						<td><p>错误详细信息</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>btnTitle</code></th>
+						<td><p>按钮文字</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>reloadBlock</code></th>
+						<td><p>刷新事件回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>自定义弹窗(发生未知错误刷新样式)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">QDAlertView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/configErrorMsg:" title="configErrorMsg:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/configErrorMsg:">&ndash;&nbsp;configErrorMsg:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>配置错误信息文字</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)configErrorMsg:(NSString *)<em>errorMsg</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>配置错误信息文字</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">QDAlertView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/closeAlertView" title="closeAlertView"></a>
+	<h3 class="method-title"><code><a href="#//api/name/closeAlertView">&ndash;&nbsp;closeAlertView</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>关闭弹窗</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)closeAlertView</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>关闭弹窗</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">QDAlertView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 qudian. All rights reserved. Updated: 2016-11-29</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

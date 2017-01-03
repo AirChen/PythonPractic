@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>SDWebImageManager Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">qudianDoc </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">qudian</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/cacheKeyFilter">cacheKeyFilter</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/sharedManager">+ sharedManager</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/cacheKeyForURL:">- cacheKeyForURL:</option>
+		
+		<option value="//api/name/cachedImageExistsForURL:">- cachedImageExistsForURL:</option>
+		
+		<option value="//api/name/cachedImageExistsForURL:completion:">- cachedImageExistsForURL:completion:</option>
+		
+		<option value="//api/name/cancelAll">- cancelAll</option>
+		
+		<option value="//api/name/diskImageExistsForURL:">- diskImageExistsForURL:</option>
+		
+		<option value="//api/name/diskImageExistsForURL:completion:">- diskImageExistsForURL:completion:</option>
+		
+		<option value="//api/name/downloadImageWithURL:options:progress:completed:">- downloadImageWithURL:options:progress:completed:</option>
+		
+		<option value="//api/name/downloadWithURL:options:progress:completed:">- downloadWithURL:options:progress:completed:</option>
+		
+		<option value="//api/name/initWithCache:downloader:">- initWithCache:downloader:</option>
+		
+		<option value="//api/name/isRunning">- isRunning</option>
+		
+		<option value="//api/name/saveImageToCache:forURL:">- saveImageToCache:forURL:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">SDWebImageManager Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>SDWebImageManager.h<br />SDWebImageManager.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<ul>
+<li>The SDWebImageManager is the class behind the UIImageView+WebCache category and likes.</li>
+<li>It ties the asynchronous downloader (<a href="../Classes/SDWebImageDownloader.html">SDWebImageDownloader</a>) with the image cache store (<a href="../Classes/SDImageCache.html">SDImageCache</a>).</li>
+<li>You can use this class directly to benefit from web image downloading with caching in another context than</li>
+<li>a UIView.
+*</li>
+<li>Here is a simple example of how to use SDWebImageManager:
+*</li>
+<li>@code</li>
+</ul>
+
+
+<p>SDWebImageManager <em>manager = <a href="#//api/name/sharedManager">[SDWebImageManager sharedManager]</a>;
+[manager downloadImageWithURL:imageURL
+                      options:0
+                     progress:nil
+                    completed:^(UIImage </em>image, NSError <em>error, <a href="../Constants/SDImageCacheType.html">SDImageCacheType</a> cacheType, BOOL finished, NSURL </em>imageURL) {
+                        if (image) {
+                            // do something with image
+                        }
+                    }];</p>
+
+<ul>
+<li>@endcode</li>
+</ul>
+
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/cacheKeyFilter" title="cacheKeyFilter"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cacheKeyFilter">&nbsp;&nbsp;cacheKeyFilter</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>The cache filter is a block used each time SDWebImageManager need to convert an URL into a cache key. This can</li>
+<li>be used to remove dynamic part of an image URL.
+*</li>
+<li>The following example sets a filter in the application delegate that will remove any query-string from the</li>
+<li>URL before to use it as a cache key:
+*</li>
+<li>@code</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) SDWebImageCacheKeyFilterBlock cacheKeyFilter</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<ul>
+<li>The cache filter is a block used each time SDWebImageManager need to convert an URL into a cache key. This can</li>
+<li>be used to remove dynamic part of an image URL.
+*</li>
+<li>The following example sets a filter in the application delegate that will remove any query-string from the</li>
+<li>URL before to use it as a cache key:
+*</li>
+<li>@code</li>
+</ul>
+
+
+<p>[[SDWebImageManager sharedManager] setCacheKeyFilter:^(NSURL *url) {
+    url = [[NSURL alloc] initWithScheme:url.scheme host:url.host path:url.path];
+    return [url absoluteString];
+}];</p>
+
+<ul>
+<li>@endcode</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SDWebImageManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sharedManager" title="sharedManager"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sharedManager">+&nbsp;sharedManager</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns global SDWebImageManager instance.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (SDWebImageManager *)sharedManager</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>SDWebImageManager shared instance</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns global SDWebImageManager instance.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SDWebImageManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithCache:downloader:" title="initWithCache:downloader:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithCache:downloader:">&ndash;&nbsp;initWithCache:downloader:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Allows to specify instance of cache and image downloader used with image manager.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)initWithCache:(SDImageCache *)<em>cache</em> downloader:(SDWebImageDownloader *)<em>downloader</em></code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>new instance of <code>SDWebImageManager</code> with specified cache and downloader.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Allows to specify instance of cache and image downloader used with image manager.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SDWebImageManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/downloadImageWithURL:options:progress:completed:" title="downloadImageWithURL:options:progress:completed:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/downloadImageWithURL:options:progress:completed:">&ndash;&nbsp;downloadImageWithURL:options:progress:completed:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Downloads the image at the given URL if not present in cache or return the cached version otherwise.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;SDWebImageOperation&gt;)downloadImageWithURL:(NSURL *)<em>url</em> options:(SDWebImageOptions)<em>options</em> progress:(SDWebImageDownloaderProgressBlock)<em>progressBlock</em> completed:(SDWebImageCompletionWithFinishedBlock)<em>completedBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>url</code></th>
+						<td><p>The URL to the image</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>options</code></th>
+						<td><p>A mask to specify options to use for this request</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>progressBlock</code></th>
+						<td><p>A block called while image is downloading</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completedBlock</code></th>
+						<td><p>A block called when operation has been completed.</p>
+
+<p>This parameter is required.</p>
+
+<p>This block has no return value and takes the requested UIImage as first parameter.
+In case of error the image parameter is nil and the second parameter may contain an NSError.</p>
+
+<p>The third parameter is an <a href="../Constants/SDImageCacheType.html"><code>SDImageCacheType</code></a> enum indicating if the image was retrieved from the local cache
+or from the memory cache or from the network.</p>
+
+<p>The last parameter is set to NO when the SDWebImageProgressiveDownload option is used and the image is
+downloading. This block is thus called repeatedly with a partial image. When image is fully downloaded, the
+block is called a last time with the full image and the last parameter set to YES.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Returns an NSObject conforming to <a href="../Protocols/SDWebImageOperation.html">SDWebImageOperation</a>. Should be an instance of <a href="../Classes/SDWebImageDownloaderOperation.html">SDWebImageDownloaderOperation</a></p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Downloads the image at the given URL if not present in cache or return the cached version otherwise.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SDWebImageManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/saveImageToCache:forURL:" title="saveImageToCache:forURL:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/saveImageToCache:forURL:">&ndash;&nbsp;saveImageToCache:forURL:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Saves image to cache for given URL</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)saveImageToCache:(UIImage *)<em>image</em> forURL:(NSURL *)<em>url</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>image</code></th>
+						<td><p>The image to cache</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>url</code></th>
+						<td><p>The URL to the image</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Saves image to cache for given URL</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SDWebImageManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cancelAll" title="cancelAll"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cancelAll">&ndash;&nbsp;cancelAll</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Cancel all current operations</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cancelAll</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Cancel all current operations</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SDWebImageManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isRunning" title="isRunning"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isRunning">&ndash;&nbsp;isRunning</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Check one or more operations running</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isRunning</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Check one or more operations running</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SDWebImageManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cachedImageExistsForURL:" title="cachedImageExistsForURL:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cachedImageExistsForURL:">&ndash;&nbsp;cachedImageExistsForURL:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Check if image has already been cached</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)cachedImageExistsForURL:(NSURL *)<em>url</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>url</code></th>
+						<td><p>image url</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>if the image was already cached</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Check if image has already been cached</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SDWebImageManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/diskImageExistsForURL:" title="diskImageExistsForURL:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/diskImageExistsForURL:">&ndash;&nbsp;diskImageExistsForURL:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Check if image has already been cached on disk only</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)diskImageExistsForURL:(NSURL *)<em>url</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>url</code></th>
+						<td><p>image url</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>if the image was already cached (disk only)</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Check if image has already been cached on disk only</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SDWebImageManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cachedImageExistsForURL:completion:" title="cachedImageExistsForURL:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cachedImageExistsForURL:completion:">&ndash;&nbsp;cachedImageExistsForURL:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Async check if image has already been cached</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cachedImageExistsForURL:(NSURL *)<em>url</em> completion:(SDWebImageCheckCacheCompletionBlock)<em>completionBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>url</code></th>
+						<td><p>image url</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionBlock</code></th>
+						<td><p>the block to be executed when the check is finished</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Async check if image has already been cached</p><div class="note"><p><strong>Note:</strong> the completion block is always executed on the main queue</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SDWebImageManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/diskImageExistsForURL:completion:" title="diskImageExistsForURL:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/diskImageExistsForURL:completion:">&ndash;&nbsp;diskImageExistsForURL:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Async check if image has already been cached on disk only</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)diskImageExistsForURL:(NSURL *)<em>url</em> completion:(SDWebImageCheckCacheCompletionBlock)<em>completionBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>url</code></th>
+						<td><p>image url</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionBlock</code></th>
+						<td><p>the block to be executed when the check is finished</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Async check if image has already been cached on disk only</p><div class="note"><p><strong>Note:</strong> the completion block is always executed on the main queue</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SDWebImageManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cacheKeyForURL:" title="cacheKeyForURL:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cacheKeyForURL:">&ndash;&nbsp;cacheKeyForURL:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Return the cache key for a given URL</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)cacheKeyForURL:(NSURL *)<em>url</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Return the cache key for a given URL</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SDWebImageManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Deprecated Methods" name="task_Deprecated Methods"></a>
+						<h2 class="task-title">Deprecated Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/downloadWithURL:options:progress:completed:" title="downloadWithURL:options:progress:completed:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/downloadWithURL:options:progress:completed:">&ndash;&nbsp;downloadWithURL:options:progress:completed:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Downloads the image at the given URL if not present in cache or return the cached version otherwise. (<b class="deprecated">Deprecated:</b><span class="deprecated"> This method has been deprecated. Use <code>downloadImageWithURL:options:progress:completed:</code></span>)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;SDWebImageOperation&gt;)downloadWithURL:(NSURL *)<em>url</em> options:(SDWebImageOptions)<em>options</em> progress:(SDWebImageDownloaderProgressBlock)<em>progressBlock</em> completed:(SDWebImageCompletedWithFinishedBlock)<em>completedBlock</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Downloads the image at the given URL if not present in cache or return the cached version otherwise.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SDWebImageManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 qudian. All rights reserved. Updated: 2016-11-29</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

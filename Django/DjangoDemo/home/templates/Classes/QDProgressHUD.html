@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>QDProgressHUD Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">qudianDoc </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">qudian</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/hideLoding">+ hideLoding</option>
+		
+		<option value="//api/name/hideLodingWithView:">+ hideLodingWithView:</option>
+		
+		<option value="//api/name/showLoadingAutoHide">+ showLoadingAutoHide</option>
+		
+		<option value="//api/name/showLoadingAutoHideToView:">+ showLoadingAutoHideToView:</option>
+		
+		<option value="//api/name/showLoadingMessage:">+ showLoadingMessage:</option>
+		
+		<option value="//api/name/showLoadingMessage:view:">+ showLoadingMessage:view:</option>
+		
+		<option value="//api/name/showLoding">+ showLoding</option>
+		
+		<option value="//api/name/showLodingToView:">+ showLodingToView:</option>
+		
+		<option value="//api/name/showMessage:">+ showMessage:</option>
+		
+		<option value="//api/name/showMessage:view:">+ showMessage:view:</option>
+		
+	</optgroup>
+	
+
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">QDProgressHUD Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>QDProgressHUD.h<br />QDProgressHUD.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p><code>QDProgressHUD</code> 封装的MBProgressHUD框架，专门用来处理费时事件时，显示加载用。是个单例，app运行的时候就被加载进来</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						<a title="文字展示用HUD" name="task_文字展示用HUD"></a>
+						<h2 class="task-title">文字展示用HUD</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/showMessage:" title="showMessage:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showMessage:">+&nbsp;showMessage:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>HUD 文字展示 默认KeyWindow上</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)showMessage:(NSString *)<em>message</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>HUD 文字展示 默认KeyWindow上</p>
+
+<p>@warn 默认2秒关闭</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">QDProgressHUD.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/showMessage:view:" title="showMessage:view:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showMessage:view:">+&nbsp;showMessage:view:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>HUD 文字展示 浮于view上</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)showMessage:(NSString *)<em>message</em> view:(UIView *)<em>view</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>HUD 文字展示 浮于view上</p>
+
+<p>@warn 默认2秒关闭</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">QDProgressHUD.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/showLoadingMessage:" title="showLoadingMessage:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showLoadingMessage:">+&nbsp;showLoadingMessage:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>HUD 加载文字展示 默认KeyWindow上</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)showLoadingMessage:(NSString *)<em>message</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>HUD 加载文字展示 默认KeyWindow上</p>
+
+<p>@warn 默认不关闭，需手动关闭</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">QDProgressHUD.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/showLoadingMessage:view:" title="showLoadingMessage:view:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showLoadingMessage:view:">+&nbsp;showLoadingMessage:view:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>HUD 加载文字展示 浮于view上</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)showLoadingMessage:(NSString *)<em>message</em> view:(UIView *)<em>view</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>HUD 加载文字展示 浮于view上</p>
+
+<p>@warn 默认不关闭，需手动关闭</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">QDProgressHUD.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Loading展示用HUD" name="task_Loading展示用HUD"></a>
+						<h2 class="task-title">Loading展示用HUD</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/showLoding" title="showLoding"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showLoding">+&nbsp;showLoding</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>HUD loding展示 默认KeyWindow上</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)showLoding</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>HUD loding展示 默认KeyWindow上</p>
+
+<p>@warn 默认不关闭，需手动关闭</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">QDProgressHUD.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/showLodingToView:" title="showLodingToView:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showLodingToView:">+&nbsp;showLodingToView:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>HUD loding展示 浮于view上</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)showLodingToView:(UIView *)<em>view</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>HUD loding展示 浮于view上</p>
+
+<p>@warn 默认不关闭，需手动关闭</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">QDProgressHUD.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/showLoadingAutoHide" title="showLoadingAutoHide"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showLoadingAutoHide">+&nbsp;showLoadingAutoHide</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>HUD loding展示 默认KeyWindow上</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)showLoadingAutoHide</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>HUD loding展示 默认KeyWindow上</p>
+
+<p>@warn 默认10秒关闭</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">QDProgressHUD.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/showLoadingAutoHideToView:" title="showLoadingAutoHideToView:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showLoadingAutoHideToView:">+&nbsp;showLoadingAutoHideToView:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>HUD loding展示 默认view上</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)showLoadingAutoHideToView:(UIView *)<em>view</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>HUD loding展示 默认view上</p>
+
+<p>@warn 默认10秒关闭</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">QDProgressHUD.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/hideLoding" title="hideLoding"></a>
+	<h3 class="method-title"><code><a href="#//api/name/hideLoding">+&nbsp;hideLoding</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>HUD 隐藏KeyWindow上的HUD浮层</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)hideLoding</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>HUD 隐藏KeyWindow上的HUD浮层</p>
+
+<p>@warn 默认立即关闭，不可修改</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">QDProgressHUD.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/hideLodingWithView:" title="hideLodingWithView:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/hideLodingWithView:">+&nbsp;hideLodingWithView:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>HUD 隐藏view上的HUD浮层</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)hideLodingWithView:(UIView *)<em>view</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>HUD 隐藏view上的HUD浮层</p>
+
+<p>@warn 默认立即关闭，不可修改</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">QDProgressHUD.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 qudian. All rights reserved. Updated: 2016-11-29</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
