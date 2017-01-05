@@ -1,0 +1,8 @@
+h1 { color:green; }
+p { font-style:italic; }
+div>#iter { font-weight:bold }
+span+h3 { background-color:#000000; color:yellow }
+
+div.container { width:100%; height:80%; background-color:gray }
+div.leftframe { background-color:#00ff99; height:200px; width:20%; float:left }
+div.rightframe { background-color:#88bb99; height:200px; width:50%; float:left; padding:50px; margin:10px }
