@@ -35,6 +35,10 @@
                 {% show_menu 0 100 100 100 %}
             </ul>
             {% block content %}{% endblock content %}
+            
+            <footer>
+                {% static_placeholder 'footer' %}
+            </footer>
         </div>
         {% render_block "js" %}
     </body>
